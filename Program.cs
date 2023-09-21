@@ -1,16 +1,14 @@
-﻿// Напишите программу, которая на вход принимает число (N), 
-// а на выходе показывает все чётные числа от 1 до N.
-// 5 -> 2, 4
-// 8 -> 2, 4, 6, 8
+﻿// Напишите программу которая на вход принимает два числа и выдает какое число большее а какое меньшее
+// а=5;b=7->max=7
+// a=2; b=10 -> max=10
+// a=-9;b=-3-> max = -3
 
-
-
-Console.Write("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-int even = 2;
-
-while (num >= even)
-{
-    Console.Write(even + " ");
-    even = even + 2;
+int a = -9;
+int b = -3;
+if(a > b){
+   Console.WriteLine("max a");
 }
+else{
+   Console.Write("max b");
+}
+
