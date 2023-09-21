@@ -1,25 +1,16 @@
-﻿//
-//
-//
+﻿// Напишите программу, которая на вход принимает число (N), 
+// а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+
+
 Console.Write("Введите число: ");
-int number = int.Parse(s: Console.ReadLine());
-int str = number * number;
+int num = int.Parse(Console.ReadLine());
+int even = 2;
 
-// Вывод построчно
-Console.Write("Квадрат числа ");
-Console.Write(number);
-Console.Write(" равен = ");
-Console.Write(str);
-Console.WriteLine();
-
-// Вывод с использованием $
-Console.WriteLine($"Квадрат числа {number} равен = {str}");
-
-// Вывод с обращением к перенменным
-Console.WriteLine("Квадрат числа {0} равен = {1}", number, str);
-
-//использование библиотеки Math
-int sqr = Convert.ToInt32(Console.ReadLine());
-double sqr_2 = Math.Pow(sqr,2);
-Console.WriteLine("Квадрат числа {0} равен = {1}", sqr, sqr_2);
-
+while (num >= even)
+{
+    Console.Write(even + " ");
+    even = even + 2;
+}
